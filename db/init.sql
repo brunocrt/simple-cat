@@ -28,7 +28,7 @@ CREATE TABLE answer_option (
   id INT(5) NOT NULL,
   question INT(5) NOT NULL,
   topic INT(5) NOT NULL,
-  answer_text VARCHAR(200) NOT NULL
+  answer_text VARCHAR(200) NOT NULL,
   PRIMARY KEY (id,question,topic)
 );
 
@@ -52,7 +52,7 @@ INSERT INTO question (id, topic, complexity, text, answer_id) VALUES (4,2,4,'Qua
 INSERT INTO question (id, topic, complexity, text, answer_id) VALUES (5,2,1,'Quanto e 3-5', 2);
 
 INSERT INTO question (id, topic, complexity, text, answer_id) VALUES (1,3,1,'Quanto e 1x2?', 1);
-INSERT INTO question (id, topic, complexity, text, answer_id) VALUES (2,3,2,'Quanto e 10x20?',  2);
+INSERT INTO question (id, topic, complexity, text, answer_id) VALUES (2,3,2,'Quanto e 10x20?', 2);
 INSERT INTO question (id, topic, complexity, text, answer_id) VALUES (3,3,3,'Quanto e 100x200',3);
 INSERT INTO question (id, topic, complexity, text, answer_id) VALUES (4,3,4,'Quanto e 1000x2000', 4);
 INSERT INTO question (id, topic, complexity, text, answer_id) VALUES (5,3,4,'Quanto e 1000x3000', 1);
@@ -60,7 +60,7 @@ INSERT INTO question (id, topic, complexity, text, answer_id) VALUES (5,3,4,'Qua
 INSERT INTO question (id, topic, complexity, text, answer_id) VALUES (1,4,1,'Quanto e 1/2?', 1);
 INSERT INTO question (id, topic, complexity, text, answer_id) VALUES (2,4,2,'Quanto e 10/20?', 2);
 INSERT INTO question (id, topic, complexity, text, answer_id) VALUES (3,4,3,'Quanto e 100/200', 3);
-INSERT INTO question (id, topic, complexity, text, answer_id) VALUES (4,4,4,'Quanto e 1000/2000', 4));
+INSERT INTO question (id, topic, complexity, text, answer_id) VALUES (4,4,4,'Quanto e 1000/2000', 4);
 
 -- ANSWER OPTIONS
 INSERT INTO answer_option (id, question, topic, answer_text) VALUES (1,1,1,'3');
